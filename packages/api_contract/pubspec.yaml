@@ -1,0 +1,17 @@
+name: api_contract
+description: "PicPac API contract: DTOs, JSON schema, ApiPort. Pure Dart, no Flutter, no HTTP client."
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  collection: ^1.19.1
+  meta: ^1.16.0
+  design_core:
+    path: ../design_core
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6

@@ -1,0 +1,49 @@
+{
+  "seededAt": "2026-11-09",
+  "source": "ALLINFO/ARCHITECTURE-PLAN.md §8.4 (methods) + §8.6 (regional configuration); knowledge/product.md §11",
+  "notes": [
+    "The mock never collects card data: card methods only redirect to the in-mock hosted page (PCI SAQ A shape).",
+    "Providers are sandbox ids (bepaid / yookassa); no real credentials, no network calls.",
+    "ERIP and SBP are asynchronous: the intent starts in pending_user and is completed by a webhook."
+  ],
+  "regions": [
+    {
+      "region": "BY",
+      "currency": "BYN",
+      "provider": "bepaid",
+      "methods": [
+        {
+          "id": "bank_card",
+          "titleKey": "payment.method.card",
+          "kind": "card",
+          "requiresRedirect": true
+        },
+        {
+          "id": "cash_on_delivery",
+          "titleKey": "payment.method.cod",
+          "kind": "cod",
+          "requiresRedirect": false
+        }
+      ]
+    },
+    {
+      "region": "RU",
+      "currency": "RUB",
+      "provider": "yookassa",
+      "methods": [
+        {
+          "id": "bank_card",
+          "titleKey": "payment.method.card",
+          "kind": "card",
+          "requiresRedirect": true
+        },
+        {
+          "id": "sbp",
+          "titleKey": "payment.method.sbp",
+          "kind": "sbp",
+          "requiresRedirect": true
+        }
+      ]
+    }
+  ]
+}

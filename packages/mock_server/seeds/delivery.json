@@ -1,0 +1,85 @@
+{
+  "seededAt": "2026-11-09",
+  "source": "knowledge/product.md §8; ALLINFO/parsed-web-full/data/catalog-2026-11-09.csv (delivery rows); ALLINFO/ARCHITECTURE-PLAN.md §7.3",
+  "currency": "BYN",
+  "notes": [
+    "Prices and free-from thresholds are the documented ones: 5.90 / 6.90 / 20.90 / 14.90 / 19.90 BYN; free from 150 / 150 / 300 BYN.",
+    "Pickup is a new app-only scenario: the point and the 7-day slot grid are seeded manually (ARCHITECTURE §7.3).",
+    "deliveryDays: Europochta 2 (site: 'от 2 дней'), Belpochta 3 (site: '2-3 дня'), EMS 2 (site: '1-2 дня', upper bound — never over-promise), couriers 1 (assumption: next business day inside Belarus).",
+    "Pickup slots: Minsk local time UTC+3, 10:00-12:00, 13:00-15:00, 16:00-18:00, Sunday closed. Assumption, no real pickup API exists."
+  ],
+  "options": [
+    {
+      "id": "pickup_main",
+      "kind": "pickup",
+      "titleKey": "delivery.pickup",
+      "priceMinor": 0,
+      "etaDays": 0,
+      "requiresPoint": true,
+      "allowsCashOnDelivery": true
+    },
+    {
+      "id": "europochta",
+      "kind": "post",
+      "titleKey": "delivery.europochta",
+      "priceMinor": 590,
+      "freeFromMinor": 15000,
+      "etaDays": 2,
+      "requiresPoint": false,
+      "allowsCashOnDelivery": true
+    },
+    {
+      "id": "belpochta",
+      "kind": "post",
+      "titleKey": "delivery.belpochta",
+      "priceMinor": 690,
+      "freeFromMinor": 15000,
+      "etaDays": 3,
+      "requiresPoint": false,
+      "allowsCashOnDelivery": true
+    },
+    {
+      "id": "ems",
+      "kind": "ems",
+      "titleKey": "delivery.ems",
+      "priceMinor": 2090,
+      "freeFromMinor": 30000,
+      "etaDays": 2,
+      "requiresPoint": false,
+      "allowsCashOnDelivery": false
+    },
+    {
+      "id": "courier_minsk",
+      "kind": "courier",
+      "titleKey": "delivery.courierMinsk",
+      "priceMinor": 1490,
+      "etaDays": 1,
+      "requiresPoint": false,
+      "allowsCashOnDelivery": true
+    },
+    {
+      "id": "courier_belarus",
+      "kind": "courier",
+      "titleKey": "delivery.courierBelarus",
+      "priceMinor": 1990,
+      "etaDays": 1,
+      "requiresPoint": false,
+      "allowsCashOnDelivery": true
+    }
+  ],
+  "pickupPoints": [
+    {
+      "id": "main",
+      "title": "PicPac на Минском",
+      "address": "Минский проспект, 32, корпус В3",
+      "city": "Минск"
+    }
+  ],
+  "pickupSchedule": {
+    "utcOffsetHours": 3,
+    "daysAhead": 7,
+    "slotStartHoursLocal": [10, 13, 16],
+    "slotDurationHours": 2,
+    "closedWeekdays": [7]
+  }
+}

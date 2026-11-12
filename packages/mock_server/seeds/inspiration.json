@@ -1,0 +1,270 @@
+{
+  "seededAt": "2026-11-12",
+  "source": "idea feed of stage 3 (task brief); geometry authored from the catalogue formats (photo_print 10x15 / 15x20, photo_book_classic 20x20) and validated by TemplateValidator at seed load",
+  "notes": [
+    "Every item is a curated projection of a template: `template.slots` is the same normalized geometry SetLayout applies, so the card preview and the editor can never disagree.",
+    "A template is attached to the formats it supports at seed load; a format advertises only templates whose slot count fits its maxPhotos. Without that, the editor could not resolve spread.templateId and would silently render the default layout.",
+    "titleKey and template.nameKey are ARB keys (inspirationTemplate*), no Russian prose on the wire; the human title is resolved in the app.",
+    "popularity is a mock ordering signal, an integer, never money; tags are the curated vocabulary shown as chips.",
+    "No stock photography and no screenshots: the preview is painted from the slot geometry."
+  ],
+  "items": [
+    {
+      "id": "idea_family_duo",
+      "template": {
+        "id": "insp_duo_split",
+        "nameKey": "inspirationTemplateDuoSplit",
+        "kind": "collage",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "top", "rect": {"x": 0, "y": 0, "w": 1, "h": 0.49}},
+          {"id": "bottom", "rect": {"x": 0, "y": 0.51, "w": 1, "h": 0.49}}
+        ]
+      },
+      "titleKey": "inspirationTemplateDuoSplit",
+      "tags": ["семья", "минимализм"],
+      "productKind": "print",
+      "popularity": 96,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_family_hero",
+      "template": {
+        "id": "insp_trio_hero",
+        "nameKey": "inspirationTemplateTrioHero",
+        "kind": "collage",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "hero", "rect": {"x": 0, "y": 0, "w": 1, "h": 0.64}},
+          {"id": "bottom_left", "rect": {"x": 0, "y": 0.66, "w": 0.49, "h": 0.34}},
+          {"id": "bottom_right", "rect": {"x": 0.51, "y": 0.66, "w": 0.49, "h": 0.34}}
+        ]
+      },
+      "titleKey": "inspirationTemplateTrioHero",
+      "tags": ["семья", "детское"],
+      "productKind": "print",
+      "popularity": 92,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_family_grid",
+      "template": {
+        "id": "insp_quad_2x2",
+        "nameKey": "inspirationTemplateQuadGrid",
+        "kind": "collage",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "tl", "rect": {"x": 0, "y": 0, "w": 0.49, "h": 0.49}},
+          {"id": "tr", "rect": {"x": 0.51, "y": 0, "w": 0.49, "h": 0.49}},
+          {"id": "bl", "rect": {"x": 0, "y": 0.51, "w": 0.49, "h": 0.49}},
+          {"id": "br", "rect": {"x": 0.51, "y": 0.51, "w": 0.49, "h": 0.49}}
+        ]
+      },
+      "titleKey": "inspirationTemplateQuadGrid",
+      "tags": ["семья", "путешествие"],
+      "productKind": "print",
+      "popularity": 90,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_kids_polaroid",
+      "template": {
+        "id": "insp_polaroid",
+        "nameKey": "inspirationTemplatePolaroid",
+        "kind": "print",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "photo", "rect": {"x": 0.06, "y": 0.06, "w": 0.88, "h": 0.74}}
+        ]
+      },
+      "titleKey": "inspirationTemplatePolaroid",
+      "tags": ["детское", "минимализм"],
+      "productKind": "print",
+      "popularity": 88,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_travel_panorama",
+      "template": {
+        "id": "insp_panorama",
+        "nameKey": "inspirationTemplatePanorama",
+        "kind": "print",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "photo", "rect": {"x": 0, "y": 0.32, "w": 1, "h": 0.36}}
+        ]
+      },
+      "titleKey": "inspirationTemplatePanorama",
+      "tags": ["путешествие", "минимализм"],
+      "productKind": "print",
+      "popularity": 84,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_grad_strip",
+      "template": {
+        "id": "insp_strip3",
+        "nameKey": "inspirationTemplateStrip3",
+        "kind": "collage",
+        "aspect": 0.6710526315789473,
+        "slots": [
+          {"id": "row_1", "rect": {"x": 0, "y": 0, "w": 1, "h": 0.32}},
+          {"id": "row_2", "rect": {"x": 0, "y": 0.34, "w": 1, "h": 0.32}},
+          {"id": "row_3", "rect": {"x": 0, "y": 0.68, "w": 1, "h": 0.32}}
+        ]
+      },
+      "titleKey": "inspirationTemplateStrip3",
+      "tags": ["выпускной", "минимализм"],
+      "productKind": "print",
+      "popularity": 80,
+      "supports": [{"productId": "photo_print", "formatId": "10x15"}]
+    },
+    {
+      "id": "idea_wedding_polaroid_large",
+      "template": {
+        "id": "insp_polaroid_large",
+        "nameKey": "inspirationTemplatePolaroidLarge",
+        "kind": "print",
+        "aspect": 0.7487684729064039,
+        "slots": [
+          {"id": "photo", "rect": {"x": 0.07, "y": 0.07, "w": 0.86, "h": 0.72}}
+        ]
+      },
+      "titleKey": "inspirationTemplatePolaroidLarge",
+      "tags": ["свадьба", "детское"],
+      "productKind": "print",
+      "popularity": 76,
+      "supports": [{"productId": "photo_print", "formatId": "15x20"}]
+    },
+    {
+      "id": "idea_travel_panorama_wide",
+      "template": {
+        "id": "insp_panorama_wide",
+        "nameKey": "inspirationTemplatePanoramaWide",
+        "kind": "print",
+        "aspect": 0.7487684729064039,
+        "slots": [
+          {"id": "photo", "rect": {"x": 0, "y": 0.36, "w": 1, "h": 0.28}}
+        ]
+      },
+      "titleKey": "inspirationTemplatePanoramaWide",
+      "tags": ["путешествие", "свадьба"],
+      "productKind": "print",
+      "popularity": 74,
+      "supports": [{"productId": "photo_print", "formatId": "15x20"}]
+    },
+    {
+      "id": "idea_book_single",
+      "template": {
+        "id": "insp_book_single",
+        "nameKey": "inspirationTemplateBookSingle",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "main", "rect": {"x": 0, "y": 0, "w": 1, "h": 1}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookSingle",
+      "tags": ["свадьба", "минимализм"],
+      "productKind": "book",
+      "popularity": 70,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    },
+    {
+      "id": "idea_book_duo",
+      "template": {
+        "id": "insp_book_duo",
+        "nameKey": "inspirationTemplateBookDuo",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "left", "rect": {"x": 0, "y": 0, "w": 0.49, "h": 1}},
+          {"id": "right", "rect": {"x": 0.51, "y": 0, "w": 0.49, "h": 1}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookDuo",
+      "tags": ["свадьба", "семья"],
+      "productKind": "book",
+      "popularity": 68,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    },
+    {
+      "id": "idea_book_trio",
+      "template": {
+        "id": "insp_book_trio",
+        "nameKey": "inspirationTemplateBookTrio",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "left", "rect": {"x": 0, "y": 0, "w": 0.49, "h": 1}},
+          {"id": "right_top", "rect": {"x": 0.51, "y": 0, "w": 0.49, "h": 0.49}},
+          {"id": "right_bottom", "rect": {"x": 0.51, "y": 0.51, "w": 0.49, "h": 0.49}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookTrio",
+      "tags": ["выпускной", "семья"],
+      "productKind": "book",
+      "popularity": 66,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    },
+    {
+      "id": "idea_book_quad",
+      "template": {
+        "id": "insp_book_quad",
+        "nameKey": "inspirationTemplateBookQuad",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "tl", "rect": {"x": 0, "y": 0, "w": 0.49, "h": 0.49}},
+          {"id": "tr", "rect": {"x": 0.51, "y": 0, "w": 0.49, "h": 0.49}},
+          {"id": "bl", "rect": {"x": 0, "y": 0.51, "w": 0.49, "h": 0.49}},
+          {"id": "br", "rect": {"x": 0.51, "y": 0.51, "w": 0.49, "h": 0.49}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookQuad",
+      "tags": ["семья", "путешествие"],
+      "productKind": "book",
+      "popularity": 62,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    },
+    {
+      "id": "idea_book_six",
+      "template": {
+        "id": "insp_book_six",
+        "nameKey": "inspirationTemplateBookSix",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "r1c1", "rect": {"x": 0, "y": 0, "w": 0.32, "h": 0.49}},
+          {"id": "r1c2", "rect": {"x": 0.34, "y": 0, "w": 0.32, "h": 0.49}},
+          {"id": "r1c3", "rect": {"x": 0.68, "y": 0, "w": 0.32, "h": 0.49}},
+          {"id": "r2c1", "rect": {"x": 0, "y": 0.51, "w": 0.32, "h": 0.49}},
+          {"id": "r2c2", "rect": {"x": 0.34, "y": 0.51, "w": 0.32, "h": 0.49}},
+          {"id": "r2c3", "rect": {"x": 0.68, "y": 0.51, "w": 0.32, "h": 0.49}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookSix",
+      "tags": ["выпускной", "путешествие"],
+      "productKind": "book",
+      "popularity": 58,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    },
+    {
+      "id": "idea_book_panorama",
+      "template": {
+        "id": "insp_book_panorama",
+        "nameKey": "inspirationTemplateBookPanorama",
+        "kind": "spread",
+        "aspect": 1.9704433497536946,
+        "slots": [
+          {"id": "photo", "rect": {"x": 0, "y": 0.3, "w": 1, "h": 0.4}}
+        ]
+      },
+      "titleKey": "inspirationTemplateBookPanorama",
+      "tags": ["путешествие", "свадьба"],
+      "productKind": "book",
+      "popularity": 54,
+      "supports": [{"productId": "photo_book_classic", "formatId": "20x20"}]
+    }
+  ]
+}

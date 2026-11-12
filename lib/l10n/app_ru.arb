@@ -1,0 +1,1831 @@
+{
+  "@@locale": "ru",
+  "appTitle": "PicPac",
+  "@appTitle": {
+    "description": "Название приложения"
+  },
+  "navCatalog": "Каталог",
+  "@navCatalog": {},
+  "navOrders": "Заказы",
+  "@navOrders": {},
+  "navSupport": "Поддержка",
+  "@navSupport": {},
+  "navProfile": "Профиль",
+  "@navProfile": {},
+  "placeholderTitle": "Раздел в разработке",
+  "@placeholderTitle": {},
+  "placeholderBody": "Скоро здесь появится рабочий экран.",
+  "@placeholderBody": {},
+  "actionRetry": "Повторить",
+  "@actionRetry": {},
+  "actionClose": "Закрыть",
+  "@actionClose": {},
+  "actionBack": "Назад",
+  "@actionBack": {},
+  "actionCancel": "Отмена",
+  "@actionCancel": {},
+  "actionContinue": "Продолжить",
+  "@actionContinue": {},
+  "actionLogout": "Выйти",
+  "@actionLogout": {},
+  "actionLogin": "Войти",
+  "@actionLogin": {},
+  "actionGoCatalog": "В каталог",
+  "@actionGoCatalog": {},
+  "actionBuild": "Собрать",
+  "@actionBuild": {},
+  "actionApply": "Применить",
+  "@actionApply": {},
+  "actionRemove": "Удалить",
+  "@actionRemove": {},
+  "actionCheckout": "Оформить",
+  "@actionCheckout": {},
+  "actionLoadMore": "Показать ещё",
+  "@actionLoadMore": {},
+  "actionFind": "Найти",
+  "@actionFind": {},
+  "loading": "Загружаем…",
+  "@loading": {},
+  "a11ySliderValue": "{label}, {value}",
+  "@a11ySliderValue": {
+    "description": "Значение слайдера для экранного диктора: «Свет, +0.3» — сначала название параметра, затем человеческое значение"
+  },
+  "a11yProductCard": "{title}, {price}",
+  "@a11yProductCard": {
+    "description": "Карточка товара читается одним элементом: название и цена «от»"
+  },
+  "a11yCartLine": "{title}, {quantity}",
+  "@a11yCartLine": {
+    "description": "Строка корзины одним элементом: название и количество"
+  },
+  "a11yOrderCard": "Заказ {number}, {status}, {total}",
+  "@a11yOrderCard": {
+    "description": "Карточка заказа в истории: номер, статус и сумма"
+  },
+  "a11yTicketCard": "{subject}, {status}",
+  "@a11yTicketCard": {
+    "description": "Карточка обращения: тема и статус"
+  },
+  "a11ySheetPreview": "Макет разворота {current} из {total}",
+  "@a11ySheetPreview": {
+    "description": "Превью макета в редакторе — изображение, а не набор слоёв"
+  },
+  "startupTitle": "Не удалось запустить PicPac",
+  "@startupTitle": {},
+  "startupBody": "Проверьте подключение и попробуйте снова.",
+  "@startupBody": {},
+  "startupRetrying": "Запускаем…",
+  "@startupRetrying": {
+    "description": "Кнопка повтора на экране ошибки старта, пока идёт новая попытка"
+  },
+  "errorGeneric": "Что-то пошло не так. Попробуйте ещё раз.",
+  "@errorGeneric": {},
+  "errorNetwork": "Нет соединения. Проверьте сеть и попробуйте снова.",
+  "@errorNetwork": {},
+  "errorTimeout": "Сервер не ответил. Попробуйте ещё раз.",
+  "@errorTimeout": {},
+  "errorUnauthorized": "Нужно войти снова.",
+  "@errorUnauthorized": {},
+  "errorForbidden": "Недостаточно прав для этого действия.",
+  "@errorForbidden": {},
+  "errorConflictRevision": "Проект изменён на другом устройстве. Обновите черновик.",
+  "@errorConflictRevision": {},
+  "errorIdempotencyConflict": "Заказ уже создан. Откройте историю заказов.",
+  "@errorIdempotencyConflict": {},
+  "errorValidation": "Проверьте введённые данные.",
+  "@errorValidation": {},
+  "errorNotFound": "Не нашли то, что искали.",
+  "@errorNotFound": {},
+  "routeNotFound": "Страница не найдена: {path}",
+  "@routeNotFound": {
+    "description": "Экран ошибки маршрутизатора для неизвестного адреса",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "errorRateLimited": "Слишком много попыток. Подождите минуту.",
+  "@errorRateLimited": {},
+  "errorInvalidData": "Сервер вернул неожиданный ответ. Мы уже разбираемся.",
+  "@errorInvalidData": {},
+  "catalogTitle": "Каталог",
+  "@catalogTitle": {},
+  "catalogLoading": "Загружаем каталог",
+  "@catalogLoading": {},
+  "catalogEmptyTitle": "Каталог пока пуст",
+  "@catalogEmptyTitle": {},
+  "catalogEmptyBody": "Мы обновляем ассортимент. Загляните чуть позже.",
+  "@catalogEmptyBody": {},
+  "catalogOpenCart": "Корзина",
+  "@catalogOpenCart": {},
+  "catalogCartHint": "Открыть корзину",
+  "@catalogCartHint": {},
+  "priceFrom": "от {price}",
+  "@priceFrom": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "productFormatsTitle": "Форматы и цены",
+  "@productFormatsTitle": {},
+  "productSize": "{width} × {height} мм",
+  "@productSize": {
+    "placeholders": {
+      "width": {
+        "type": "String"
+      },
+      "height": {
+        "type": "String"
+      }
+    }
+  },
+  "productEta": "готовность {days} дн.",
+  "@productEta": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "productPriceUnavailable": "Цена по запросу",
+  "@productPriceUnavailable": {},
+  "productBuildFailed": "Не удалось создать проект",
+  "@productBuildFailed": {},
+  "productLoginToBuild": "Не удалось собрать проект. Повторите попытку.",
+  "@productLoginToBuild": {},
+  "productChooseFormat": "Выберите формат",
+  "@productChooseFormat": {},
+  "productHeroHint": "Изображение товара «{title}»",
+  "@productHeroHint": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cartTitle": "Корзина",
+  "@cartTitle": {},
+  "cartEmptyTitle": "Корзина пуста",
+  "@cartEmptyTitle": {},
+  "cartEmptyBody": "Соберите проект в каталоге — он появится здесь.",
+  "@cartEmptyBody": {},
+  "cartExpiredTitle": "Корзина истекла",
+  "@cartExpiredTitle": {},
+  "cartExpiredBody": "Позиции хранятся 14 дней. Соберите проект заново.",
+  "@cartExpiredBody": {},
+  "cartSubtotal": "Итого",
+  "@cartSubtotal": {},
+  "cartEta": "Готовность через {days} дн.",
+  "@cartEta": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "cartQuantity": "Количество",
+  "@cartQuantity": {},
+  "cartIncrease": "Добавить штуку",
+  "@cartIncrease": {},
+  "cartDecrease": "Убрать штуку",
+  "@cartDecrease": {},
+  "cartRemoveTitle": "Удалить позицию?",
+  "@cartRemoveTitle": {},
+  "cartRemoveBody": "«{title}» пропадёт из корзины.",
+  "@cartRemoveBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cartUnavailableItem": "Проект недоступен",
+  "@cartUnavailableItem": {},
+  "cartCannotCheckout": "Часть позиций недоступна. Удалите их, чтобы продолжить.",
+  "@cartCannotCheckout": {},
+  "cartUpdateFailed": "Не удалось обновить корзину",
+  "@cartUpdateFailed": {},
+  "cartExpiresAt": "Корзина хранится до {date}",
+  "@cartExpiresAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "cartItemsCount": "Позиций: {count}",
+  "@cartItemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "checkoutTitle": "Оформление",
+  "@checkoutTitle": {},
+  "checkoutDelivery": "Получение",
+  "@checkoutDelivery": {},
+  "checkoutPickupPoint": "Пункт выдачи",
+  "@checkoutPickupPoint": {},
+  "checkoutPickupSlot": "Время получения",
+  "@checkoutPickupSlot": {},
+  "checkoutAddress": "Адрес",
+  "@checkoutAddress": {},
+  "checkoutAddressHint": "Улица, дом, квартира",
+  "@checkoutAddressHint": {},
+  "checkoutPromo": "Промокод",
+  "@checkoutPromo": {},
+  "checkoutPromoHint": "Например, TEST10",
+  "@checkoutPromoHint": {},
+  "checkoutPromoApplied": "Промокод {code} применён",
+  "@checkoutPromoApplied": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "checkoutPromoUnknown": "Такого промокода нет или он истёк",
+  "@checkoutPromoUnknown": {},
+  "checkoutPromoClear": "Убрать промокод",
+  "@checkoutPromoClear": {},
+  "checkoutContacts": "Контакты",
+  "@checkoutContacts": {},
+  "checkoutName": "Имя",
+  "@checkoutName": {},
+  "checkoutPhone": "Телефон",
+  "@checkoutPhone": {},
+  "checkoutNameRequired": "Укажите имя",
+  "@checkoutNameRequired": {},
+  "checkoutPhoneRequired": "Укажите телефон",
+  "@checkoutPhoneRequired": {},
+  "checkoutPhoneInvalid": "Проверьте номер: +375 (29) 123-45-67 или +7 999 123-45-67",
+  "@checkoutPhoneInvalid": {},
+  "checkoutSubmit": "Оформить заказ",
+  "@checkoutSubmit": {},
+  "checkoutSubmitting": "Оформляем…",
+  "@checkoutSubmitting": {},
+  "checkoutLoginRequired": "Войти и оформить",
+  "@checkoutLoginRequired": {},
+  "checkoutSummary": "Итог",
+  "@checkoutSummary": {},
+  "checkoutPreliminary": "Предварительно: точную сумму подтвердит сервер при оформлении.",
+  "@checkoutPreliminary": {},
+  "checkoutDeliveryRequired": "Выберите способ получения",
+  "@checkoutDeliveryRequired": {},
+  "checkoutSlotRequired": "Выберите время получения",
+  "@checkoutSlotRequired": {},
+  "checkoutAddressRequired": "Укажите адрес доставки",
+  "@checkoutAddressRequired": {},
+  "checkoutFailed": "Не удалось оформить заказ",
+  "@checkoutFailed": {},
+  "checkoutEmptyCart": "Корзина пуста — добавьте проект из каталога.",
+  "@checkoutEmptyCart": {},
+  "checkoutNoSlots": "Свободных слотов нет. Выберите другой пункт.",
+  "@checkoutNoSlots": {},
+  "checkoutPhoneHint": "+375 29 123 45 67",
+  "@checkoutPhoneHint": {},
+  "priceProduct": "Товары",
+  "@priceProduct": {},
+  "priceOptions": "Опции",
+  "@priceOptions": {},
+  "pricePromo": "Скидка",
+  "@pricePromo": {},
+  "priceDelivery": "Доставка",
+  "@priceDelivery": {},
+  "deliveryPickup": "Самовывоз",
+  "@deliveryPickup": {},
+  "deliveryEuropochta": "Европочта",
+  "@deliveryEuropochta": {},
+  "deliveryBelpochta": "Белпочта",
+  "@deliveryBelpochta": {},
+  "deliveryEms": "EMS",
+  "@deliveryEms": {},
+  "deliveryCourierMinsk": "Курьер по Минску",
+  "@deliveryCourierMinsk": {},
+  "deliveryCourierBelarus": "Курьер по Беларуси",
+  "@deliveryCourierBelarus": {},
+  "deliveryDays": "{days} дн.",
+  "@deliveryDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deliveryFreeFrom": "бесплатно от {price}",
+  "@deliveryFreeFrom": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "deliveryKindPickup": "Самовывоз",
+  "@deliveryKindPickup": {},
+  "deliveryKindPost": "Почта",
+  "@deliveryKindPost": {},
+  "deliveryKindEms": "EMS",
+  "@deliveryKindEms": {},
+  "deliveryKindCourier": "Курьер",
+  "@deliveryKindCourier": {},
+  "deliveryKindUnknown": "Получение",
+  "@deliveryKindUnknown": {},
+  "ordersTitle": "Заказы",
+  "@ordersTitle": {},
+  "ordersEmptyTitle": "Заказов пока нет",
+  "@ordersEmptyTitle": {},
+  "ordersEmptyBody": "Оформите первый заказ — он появится здесь.",
+  "@ordersEmptyBody": {},
+  "ordersLoginRequired": "Заказы хранятся в аккаунте.",
+  "@ordersLoginRequired": {},
+  "ordersStale": "Данные могут быть устаревшими",
+  "@ordersStale": {},
+  "ordersLookup": "Найти заказ по номеру",
+  "@ordersLookup": {},
+  "ordersOpenOrder": "Открыть заказ {number}",
+  "@ordersOpenOrder": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "ordersItemsCount": "Позиций: {count}",
+  "@ordersItemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statusUpdating": "обновляется",
+  "@statusUpdating": {},
+  "orderTitle": "Заказ",
+  "@orderTitle": {},
+  "orderHeading": "Заказ {number}",
+  "@orderHeading": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCreatedAt": "Оформлен {date}",
+  "@orderCreatedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orderItemsTitle": "Состав",
+  "@orderItemsTitle": {},
+  "orderItemQuantity": "{quantity} × {price}",
+  "@orderItemQuantity": {
+    "placeholders": {
+      "quantity": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "orderTotalsTitle": "Сумма",
+  "@orderTotalsTitle": {},
+  "orderSubtotal": "Товары",
+  "@orderSubtotal": {},
+  "orderDiscount": "Скидка",
+  "@orderDiscount": {},
+  "orderDeliveryCost": "Доставка",
+  "@orderDeliveryCost": {},
+  "orderTotal": "Итого",
+  "@orderTotal": {},
+  "orderDeliveryTitle": "Получение",
+  "@orderDeliveryTitle": {},
+  "orderPayCta": "Оплатить заказ",
+  "@orderPayCta": { "description": "Кнопка оплаты на экране заказа" },
+  "orderPaymentTitle": "Оплата",
+  "@orderPaymentTitle": {},
+  "orderFulfillmentTitle": "Готовность",
+  "@orderFulfillmentTitle": {},
+  "orderEta": "Готово к {date}",
+  "@orderEta": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orderTimelineTitle": "Статусы",
+  "@orderTimelineTitle": {},
+  "orderTracking": "Трек-номер {number}",
+  "@orderTracking": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "orderPickupCode": "Код самовывоза",
+  "@orderPickupCode": {},
+  "orderPickupCodeHint": "Назовите код на пункте выдачи",
+  "@orderPickupCodeHint": {},
+  "orderProblem": "Проблема с заказом",
+  "@orderProblem": {},
+  "orderNotFound": "Заказ не найден",
+  "@orderNotFound": {},
+  "orderOfflineUnavailable": "Заказ не сохранён на устройстве. Проверьте соединение.",
+  "@orderOfflineUnavailable": {},
+  "orderStatusDraft": "Черновик",
+  "@orderStatusDraft": {},
+  "orderStatusPlaced": "Оформлен",
+  "@orderStatusPlaced": {},
+  "orderStatusAccepted": "Принят",
+  "@orderStatusAccepted": {},
+  "orderStatusModeration": "На модерации",
+  "@orderStatusModeration": {},
+  "orderStatusProduction": "В производстве",
+  "@orderStatusProduction": {},
+  "orderStatusReady": "Готов",
+  "@orderStatusReady": {},
+  "orderStatusReadyForPickup": "Готов к выдаче",
+  "@orderStatusReadyForPickup": {},
+  "orderStatusShipped": "Передан в доставку",
+  "@orderStatusShipped": {},
+  "orderStatusCompleted": "Завершён",
+  "@orderStatusCompleted": {},
+  "orderStatusCanceled": "Отменён",
+  "@orderStatusCanceled": {},
+  "orderStatusReturned": "Возврат",
+  "@orderStatusReturned": {},
+  "paymentStatusCreated": "Ожидает оплаты",
+  "@paymentStatusCreated": {},
+  "paymentStatusRequiresAction": "Нужно подтверждение",
+  "@paymentStatusRequiresAction": {},
+  "paymentStatusPendingUser": "Ожидает оплаты",
+  "@paymentStatusPendingUser": {},
+  "paymentStatusProcessing": "Платёж обрабатывается",
+  "@paymentStatusProcessing": {},
+  "paymentStatusSucceeded": "Оплачен",
+  "@paymentStatusSucceeded": {},
+  "paymentStatusFailed": "Оплата не прошла",
+  "@paymentStatusFailed": {},
+  "paymentStatusExpired": "Срок оплаты истёк",
+  "@paymentStatusExpired": {},
+  "paymentStatusCanceled": "Оплата отменена",
+  "@paymentStatusCanceled": {},
+  "paymentStatusRefunded": "Возврат",
+  "@paymentStatusRefunded": {},
+  "paymentStatusPartiallyRefunded": "Частичный возврат",
+  "@paymentStatusPartiallyRefunded": {},
+  "paymentStatusPendingOnDelivery": "Оплата при получении",
+  "@paymentStatusPendingOnDelivery": {},
+  "lookupTitle": "Найти заказ",
+  "@lookupTitle": {},
+  "lookupBody": "Введите номер заказа и последние 4 цифры телефона из заказа.",
+  "@lookupBody": {},
+  "lookupNumber": "Номер заказа",
+  "@lookupNumber": {},
+  "lookupPhoneLast4": "Последние 4 цифры телефона",
+  "@lookupPhoneLast4": {},
+  "lookupPhoneLast4Invalid": "Нужны 4 цифры",
+  "@lookupPhoneLast4Invalid": {},
+  "lookupNotFound": "Заказ с таким номером и телефоном не найден",
+  "@lookupNotFound": {},
+  "mediaHeicUnsupported": "HEIC пока не поддерживается. Сохраните фото как JPEG или PNG и попробуйте снова.",
+  "@mediaHeicUnsupported": {},
+  "mediaTooLarge": "Файл больше {limit} МБ. Уменьшите фото и попробуйте снова.",
+  "@mediaTooLarge": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "mediaUnsupported": "Этот формат не печатается. Нужны JPEG или PNG.",
+  "@mediaUnsupported": {},
+  "mediaTooSmallPixels": "Фото {width}×{height} px слишком маленькое для печати.",
+  "@mediaTooSmallPixels": {
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      }
+    }
+  },
+  "mediaUnreadable": "Не удалось прочитать файл. Выберите другое фото.",
+  "@mediaUnreadable": {},
+  "mediaPermissionTitle": "Нет доступа к фотографиям",
+  "@mediaPermissionTitle": {},
+  "mediaPermissionBody": "Разрешите PicPac доступ к фотографиям в настройках телефона и повторите выбор.",
+  "@mediaPermissionBody": {},
+  "mediaPermissionRetry": "Повторить выбор",
+  "@mediaPermissionRetry": {},
+  "mediaRejectedTitle": "Не добавлено",
+  "@mediaRejectedTitle": {},
+  "mediaDuplicatesSkipped": "Уже есть в проекте: {count}",
+  "@mediaDuplicatesSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createTitle": "Проект",
+  "@createTitle": {},
+  "createPhotosTitle": "Фотографии",
+  "@createPhotosTitle": {},
+  "createPhotosCount": "{count} из {max}",
+  "@createPhotosCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "createAddPhotos": "Добавить фото",
+  "@createAddPhotos": {},
+  "createLimitReached": "На лист помещается {max} фото. Уберите лишние, чтобы добавить новые.",
+  "@createLimitReached": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "createMinPhotos": "Нужно минимум {min} фото.",
+  "@createMinPhotos": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "createEmptyTitle": "Пока нет фотографий",
+  "@createEmptyTitle": {},
+  "createEmptyBody": "Добавьте фото с устройства — оригиналы останутся у вас.",
+  "@createEmptyBody": {},
+  "createDeleteTitle": "Удалить фото?",
+  "@createDeleteTitle": {},
+  "createDeleteBody": "Фото «{name}» пропадёт из проекта. Оригинал на устройстве не изменится.",
+  "@createDeleteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "createReorderHint": "Удерживайте фото и перетащите, чтобы изменить порядок.",
+  "@createReorderHint": {},
+  "createOfflineBanner": "Нет сети. Изменения сохранятся на устройстве и уйдут на сервер позже.",
+  "@createOfflineBanner": {},
+  "createSyncSaving": "Сохраняем…",
+  "@createSyncSaving": {},
+  "createSyncSaved": "Сохранено",
+  "@createSyncSaved": {},
+  "createSyncPending": "Ждёт сети",
+  "@createSyncPending": {},
+  "createDraftRestored": "Черновик восстановлен с устройства",
+  "@createDraftRestored": {},
+  "createConflictTitle": "Проект изменён на другом устройстве",
+  "@createConflictTitle": {},
+  "createConflictBody": "Версия на сервере новее. Загрузите её или оставьте свои правки — они перезапишут серверные.",
+  "@createConflictBody": {},
+  "createConflictLoadServer": "Загрузить с сервера",
+  "@createConflictLoadServer": {},
+  "createConflictKeepLocal": "Оставить мои правки",
+  "@createConflictKeepLocal": {},
+  "createOrder": "Оформить заказ",
+  "@createOrder": {},
+  "createEditSheets": "Изменить листы",
+  "@createEditSheets": {},
+  "createPreviewTitle": "Лист {index} из {total}",
+  "@createPreviewTitle": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "createPhotoUploading": "Загружаем фото {index}",
+  "@createPhotoUploading": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createCancelUpload": "Отменить загрузку фото {index}",
+  "@createCancelUpload": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createUploadRetry": "Повторить загрузку фото {index}",
+  "@createUploadRetry": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createUploadFailed": "Фото не загрузилось",
+  "@createUploadFailed": {},
+  "createLocalCopy": "Локальная копия",
+  "@createLocalCopy": {},
+  "createLocalCopyHint": "Проект на сервере недоступен — открыта копия с устройства.",
+  "@createLocalCopyHint": {},
+  "createOrderNeedsPhotos": "Добавьте хотя бы одно фото — тогда можно оформить заказ.",
+  "@createOrderNeedsPhotos": {},
+  "createUndo": "Отменить",
+  "@createUndo": {},
+  "createRedo": "Вернуть",
+  "@createRedo": {},
+  "createPhotoNumber": "Фото {index}",
+  "@createPhotoNumber": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createMovePhoto": "Переставить фото {index}",
+  "@createMovePhoto": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createRemovePhoto": "Удалить фото {index}",
+  "@createRemovePhoto": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "createFormatMissing": "Формат недоступен без сети. Откройте проект при подключении.",
+  "@createFormatMissing": {},
+  "createEnhanceAll": "Улучшить все",
+  "@createEnhanceAll": {},
+  "createEnhanceApplied": "Улучшено {count} фото",
+  "@createEnhanceApplied": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createEnhanceAlready": "Всё уже улучшено",
+  "@createEnhanceAlready": {},
+  "createEnhanceFailed": "Не получилось улучшить. Попробуйте ещё раз.",
+  "@createEnhanceFailed": {},
+  "createEnhanceUndo": "Вернуть",
+  "@createEnhanceUndo": {},
+  "createEnhancePreviewBefore": "До",
+  "@createEnhancePreviewBefore": {},
+  "createEnhancePreviewAfter": "После",
+  "@createEnhancePreviewAfter": {},
+  "createEnhancePreviewHint": "Свет и тепло подстроятся под каждое фото",
+  "@createEnhancePreviewHint": {},
+  "createResetToImported": "Вернуть как было",
+  "@createResetToImported": {},
+  "createResetToImportedHint": "Сбросить кадры, свет и стиль. Фото останутся.",
+  "@createResetToImportedHint": {},
+  "createLayoutTitle": "Можно плотнее",
+  "@createLayoutTitle": {},
+  "createLayoutBody": "{sheets, plural, one{{sheets} лист} few{{sheets} листа} many{{sheets} листов} other{{sheets} листа}} вместо {current}",
+  "@createLayoutBody": {
+    "placeholders": {
+      "sheets": {
+        "type": "int"
+      },
+      "current": {
+        "type": "int"
+      }
+    }
+  },
+  "createLayoutHint": "Кадры и обрезка сохранятся.",
+  "@createLayoutHint": {},
+  "createLayoutAccept": "Так лучше",
+  "@createLayoutAccept": {},
+  "createLayoutKeep": "Оставить по одному",
+  "@createLayoutKeep": {},
+  "createLayoutApplied": "Раскладка готова",
+  "@createLayoutApplied": {},
+  "editorTitle": "Кадрирование",
+  "@editorTitle": {},
+  "editorZoom": "Масштаб",
+  "@editorZoom": {},
+  "editorCenter": "По центру",
+  "@editorCenter": {},
+  "editorDone": "Готово",
+  "@editorDone": {},
+  "editorSheetOf": "Лист {index} из {total}",
+  "@editorSheetOf": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "editorPrevSheet": "Предыдущий лист",
+  "@editorPrevSheet": {},
+  "editorNextSheet": "Следующий лист",
+  "@editorNextSheet": {},
+  "editorEmptySlot": "Добавьте фото",
+  "@editorEmptySlot": {},
+  "editorSlotEmpty": "пусто",
+  "@editorSlotEmpty": {},
+  "editorSlotSelected": "выбрано",
+  "@editorSlotSelected": {},
+  "editorCropHandle": "Изменить кадр, угол {corner}",
+  "@editorCropHandle": {
+    "placeholders": {
+      "corner": {
+        "type": "String"
+      }
+    }
+  },
+  "editorCornerTopLeft": "левый верхний",
+  "@editorCornerTopLeft": {},
+  "editorCornerTopRight": "правый верхний",
+  "@editorCornerTopRight": {},
+  "editorCornerBottomLeft": "левый нижний",
+  "@editorCornerBottomLeft": {},
+  "editorCornerBottomRight": "правый нижний",
+  "@editorCornerBottomRight": {},
+  "editorGestureHint": "Тяните фото, чтобы сдвинуть кадр. Двумя пальцами — масштаб.",
+  "@editorGestureHint": {},
+  "editorSelectSlotHint": "Коснитесь кадра, чтобы выбрать его",
+  "@editorSelectSlotHint": {},
+  "editorNoSlotSelected": "Выберите кадр на листе",
+  "@editorNoSlotSelected": {},
+  "editorSlotSemantic": "Кадр {index} из {total}, {state}",
+  "@editorSlotSemantic": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "editorToolFrame": "Кадр",
+  "@editorToolFrame": {},
+  "editorToolLight": "Свет",
+  "@editorToolLight": {},
+  "editorToolWarmth": "Тепло",
+  "@editorToolWarmth": {},
+  "editorToolStyle": "Стиль",
+  "@editorToolStyle": {},
+  "editorToolRotate": "Повернуть",
+  "@editorToolRotate": {},
+  "editorToolReplace": "Заменить",
+  "@editorToolReplace": {},
+  "editorToolSwap": "Обменять",
+  "@editorToolSwap": {},
+  "editorToolBackground": "Фон",
+  "@editorToolBackground": {},
+  "editorToolPending": "Скоро: ждёт обновления редактора",
+  "@editorToolPending": {},
+  "editorLightValue": "{value} EV",
+  "@editorLightValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "editorLightHint": "Светлее или темнее",
+  "@editorLightHint": {},
+  "editorWarmthValue": "{value}",
+  "@editorWarmthValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "editorWarmthHint": "Теплее или холоднее",
+  "@editorWarmthHint": {},
+  "editorZoomValue": "{value}×",
+  "@editorZoomValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "editorStyleStrength": "Сила",
+  "@editorStyleStrength": {},
+  "editorStyleApplyAll": "Применим ко всем фото",
+  "@editorStyleApplyAll": {},
+  "lookAsIs": "Как есть",
+  "@lookAsIs": {},
+  "lookWarm": "Тепло",
+  "@lookWarm": {},
+  "lookFilm": "Плёнка",
+  "@lookFilm": {},
+  "lookBright": "Ярче",
+  "@lookBright": {},
+  "lookSoft": "Мягко",
+  "@lookSoft": {},
+  "lookMono": "Ч/Б",
+  "@lookMono": {},
+  "editorRotateHint": "Если фото лежит на боку",
+  "@editorRotateHint": {},
+  "editorRotateCw": "Повернуть на 90°",
+  "@editorRotateCw": {},
+  "editorFlip": "Отразить",
+  "@editorFlip": {},
+  "editorSwapPickFirst": "Коснитесь кадра, с которым хотите поменяться",
+  "@editorSwapPickFirst": {},
+  "editorSwapPickSecond": "Поменяем с фото {index}. Коснитесь второго кадра.",
+  "@editorSwapPickSecond": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "editorReplaceTitle": "Фото в кадре",
+  "@editorReplaceTitle": {},
+  "editorBackgroundTitle": "Цвет листа",
+  "@editorBackgroundTitle": {},
+  "editorBackgroundPaper": "Как бумага",
+  "@editorBackgroundPaper": {},
+  "editorBackgroundCream": "Кремовый",
+  "@editorBackgroundCream": {},
+  "editorBackgroundMint": "Мята",
+  "@editorBackgroundMint": {},
+  "editorBackgroundBeige": "Бежевый",
+  "@editorBackgroundBeige": {},
+  "editorNoPhotoSelected": "Сначала выберите фото на листе",
+  "@editorNoPhotoSelected": {},
+  "preflightTitle": "Проверка макета",
+  "@preflightTitle": {},
+  "preflightStatusClean": "Замечаний нет",
+  "@preflightStatusClean": {},
+  "preflightStatusWarnings": "Замечания: {count}",
+  "@preflightStatusWarnings": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightStatusBlocking": "Нельзя продолжить: {count}",
+  "@preflightStatusBlocking": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightOpenIssues": "Открыть замечания",
+  "@preflightOpenIssues": {},
+  "preflightAckAndOrder": "Подтвердить и оформить",
+  "@preflightAckAndOrder": {},
+  "preflightRunning": "Проверяем макет…",
+  "@preflightRunning": {},
+  "preflightCleanTitle": "Можно печатать",
+  "@preflightCleanTitle": {},
+  "preflightCleanBody": "Все кадры заполнены, разрешения хватает.",
+  "@preflightCleanBody": {},
+  "preflightIssuesTitle": "Замечания: {count}",
+  "@preflightIssuesTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightBlockingNote": "Пока есть блокирующие замечания, заказ недоступен.",
+  "@preflightBlockingNote": {},
+  "preflightEmptySlot": "Добавьте фото",
+  "@preflightEmptySlot": {},
+  "preflightEmptySlotHint": "Лист {sheet}, кадр {slot} пуст.",
+  "@preflightEmptySlotHint": {
+    "placeholders": {
+      "sheet": {
+        "type": "int"
+      },
+      "slot": {
+        "type": "String"
+      }
+    }
+  },
+  "preflightLowDpi": "Это фото {photo} px, для {size} нужно {required} — станет мыльным.",
+  "@preflightLowDpi": {
+    "placeholders": {
+      "photo": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      },
+      "required": {
+        "type": "String"
+      }
+    }
+  },
+  "preflightUnsupported": "Формат {mime} не печатается. Нужны JPEG или PNG.",
+  "@preflightUnsupported": {
+    "placeholders": {
+      "mime": {
+        "type": "String"
+      }
+    }
+  },
+  "preflightSafeZone": "Контент ближе {mm} мм к краю — может обрезаться.",
+  "@preflightSafeZone": {
+    "placeholders": {
+      "mm": {
+        "type": "String"
+      }
+    }
+  },
+  "preflightTextOverflow": "Текст не помещается в блок.",
+  "@preflightTextOverflow": {},
+  "preflightFaceAtEdge": "Лицо слишком близко к краю — может обрезаться.",
+  "@preflightFaceAtEdge": {},
+  "preflightSheetBadge": "Лист {sheet}",
+  "@preflightSheetBadge": {
+    "placeholders": {
+      "sheet": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightServerMismatch": "Сервер нашёл отличий: {count}. Показываем проверку сервера.",
+  "@preflightServerMismatch": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightOffline": "Серверная проверка недоступна — показываем локальную.",
+  "@preflightOffline": {},
+  "preflightOverride": "Продолжить всё равно",
+  "@preflightOverride": {},
+  "preflightOverrideTitle": "Продолжить с замечаниями?",
+  "@preflightOverrideTitle": {},
+  "preflightOverrideBody": "Заказ уйдёт в производство с текущими замечаниями. Подтверждение сохраним в журнале.",
+  "@preflightOverrideBody": {},
+  "preflightOverrideConfirm": "Продолжить",
+  "@preflightOverrideConfirm": {},
+  "preflightOverrideRecorded": "Подтверждение записано",
+  "@preflightOverrideRecorded": {},
+  "preflightToCart": "В корзину",
+  "@preflightToCart": {},
+  "preflightAdding": "Добавляем…",
+  "@preflightAdding": {},
+  "preflightFix": "Исправить",
+  "@preflightFix": {},
+  "preflightAddFailed": "Не удалось добавить в корзину",
+  "@preflightAddFailed": {},
+  "preflightFixHint": "Открыть кадр в редакторе",
+  "@preflightFixHint": {},
+  "preflightWaitPhotos": "Дождитесь загрузки фото — заказ станет доступен.",
+  "@preflightWaitPhotos": {},
+  "preflightSharePdf": "Поделиться PDF",
+  "@preflightSharePdf": {},
+  "preflightSharePreparing": "Готовим PDF: {done} из {total}",
+  "@preflightSharePreparing": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "preflightShareOpening": "Открываем…",
+  "@preflightShareOpening": {},
+  "preflightShareBlocked": "Исправьте замечания или подтвердите их, чтобы поделиться PDF.",
+  "@preflightShareBlocked": {},
+  "preflightShareFailed": "Не удалось подготовить PDF",
+  "@preflightShareFailed": {},
+  "preflightShareNotLoaded": "Проект ещё загружается — попробуйте через пару секунд.",
+  "@preflightShareNotLoaded": {},
+  "preflightShareNothing": "В проекте нет листов для экспорта.",
+  "@preflightShareNothing": {},
+  "preflightShareRenderFailed": "Не удалось отрисовать макет. Попробуйте ещё раз.",
+  "@preflightShareRenderFailed": {},
+  "preflightShareOpenFailed": "Не удалось открыть «Поделиться». Попробуйте ещё раз.",
+  "@preflightShareOpenFailed": {},
+  "loginRegisterAction": "Создать аккаунт",
+  "@loginRegisterAction": { "description": "Регистрация мок-аккаунта" },
+  "loginTitle": "Вход в PicPac",
+  "@loginTitle": {},
+  "loginPromise": "Храните воспоминания красиво",
+  "@loginPromise": {
+    "description": "Brand promise shown under the logo on the sign-in screen; one line, no instruction."
+  },
+  "loginGuestNote": "Каталог и сборка — без входа",
+  "@loginGuestNote": {
+    "description": "Reassurance under the brand promise: a guest can browse and build without an account."
+  },
+  "loginPasswordMode": "По паролю",
+  "@loginPasswordMode": {},
+  "loginCodeMode": "По коду",
+  "@loginCodeMode": {},
+  "loginEmailLabel": "Email",
+  "@loginEmailLabel": {},
+  "loginEmailHint": "name@example.com",
+  "@loginEmailHint": {},
+  "loginEmailInvalid": "Проверьте адрес: нужен вид name@example.com",
+  "@loginEmailInvalid": {},
+  "loginPasswordLabel": "Пароль",
+  "@loginPasswordLabel": {},
+  "loginPasswordRequired": "Введите пароль",
+  "@loginPasswordRequired": {},
+  "loginPasswordHidden": "Показать пароль",
+  "@loginPasswordHidden": {},
+  "loginPasswordShown": "Скрыть пароль",
+  "@loginPasswordShown": {},
+  "loginSubmit": "Войти",
+  "@loginSubmit": {},
+  "loginInvalidCredentials": "Неверный email или пароль",
+  "@loginInvalidCredentials": {},
+  "loginSendCode": "Получить код",
+  "@loginSendCode": {},
+  "loginCodeLabel": "Код из письма",
+  "@loginCodeLabel": {},
+  "loginCodeHint": "4 цифры",
+  "@loginCodeHint": {},
+  "loginCodeSent": "Код отправлен на {email}. Демо-код: 0000.",
+  "@loginCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "loginCodeDemo": "Демо-код: 0000",
+  "@loginCodeDemo": {},
+  "loginCodeInvalid": "Код не подошёл. Проверьте цифры.",
+  "@loginCodeInvalid": {},
+  "loginCodeExpired": "Код истёк. Запросите новый.",
+  "@loginCodeExpired": {},
+  "loginDemoTitle": "Демо-доступ",
+  "@loginDemoTitle": {},
+  "loginDemoCustomer": "Клиент: customer@picpac.test / Test1234",
+  "@loginDemoCustomer": {},
+  "loginDemoSupport": "Поддержка: support@picpac.test / Test1234",
+  "@loginDemoSupport": {},
+  "loginDemoHint": "Нажмите, чтобы подставить данные.",
+  "@loginDemoHint": {},
+  "loginGuestContinue": "Продолжить без входа",
+  "@loginGuestContinue": {},
+  "loginLookup": "Найти заказ по номеру",
+  "@loginLookup": {},
+  "loginSupportWelcome": "Вы вошли как агент поддержки.",
+  "@loginSupportWelcome": {},
+  "loginRoleFailed": "Сервер не сообщил роль. Вход отменён — попробуйте ещё раз.",
+  "@loginRoleFailed": {},
+  "logoutTitle": "Выйти из аккаунта?",
+  "@logoutTitle": {},
+  "logoutBody": "Черновики и фото останутся на устройстве. Кеш заказов и очередь отправки будут очищены.",
+  "@logoutBody": {},
+  "logoutConfirm": "Выйти из аккаунта",
+  "@logoutConfirm": {},
+  "logoutDone": "Вы вышли из аккаунта",
+  "@logoutDone": {},
+  "supportTitle": "Поддержка",
+  "@supportTitle": {},
+  "supportAgentMode": "Режим поддержки",
+  "@supportAgentMode": {},
+  "supportAgentModeHint": "Вы видите все обращения клиентов. Заказы клиентов только для чтения.",
+  "@supportAgentModeHint": {},
+  "supportNewTicket": "Новое обращение",
+  "@supportNewTicket": {},
+  "supportCreate": "Создать обращение",
+  "@supportCreate": {},
+  "supportEmptyTitle": "Обращений пока нет",
+  "@supportEmptyTitle": {},
+  "supportEmptyBody": "Если что-то пошло не так с заказом, напишите нам — ответим здесь же.",
+  "@supportEmptyBody": {},
+  "supportEmptyAgentTitle": "Обращений нет",
+  "@supportEmptyAgentTitle": {},
+  "supportEmptyAgentBody": "Клиенты ещё не писали в поддержку. Обновите список позже.",
+  "@supportEmptyAgentBody": {},
+  "supportLoginRequired": "Обращения хранятся в аккаунте.",
+  "@supportLoginRequired": {},
+  "supportTicketCreated": "Обращение создано",
+  "@supportTicketCreated": {},
+  "supportSubjectLabel": "Тема",
+  "@supportSubjectLabel": {},
+  "supportSubjectHint": "Коротко: что случилось",
+  "@supportSubjectHint": {},
+  "supportSubjectRequired": "Опишите тему в двух словах",
+  "@supportSubjectRequired": {},
+  "supportMessageLabel": "Сообщение",
+  "@supportMessageLabel": {},
+  "supportMessageHint": "Что не так и что вы ожидали?",
+  "@supportMessageHint": {},
+  "supportMessageRequired": "Напишите сообщение",
+  "@supportMessageRequired": {},
+  "supportTypeLabel": "Причина",
+  "@supportTypeLabel": {},
+  "supportTypeQuestion": "Вопрос",
+  "@supportTypeQuestion": {},
+  "supportTypeDefect": "Брак или перепечатка",
+  "@supportTypeDefect": {},
+  "supportTypeRefund": "Возврат",
+  "@supportTypeRefund": {},
+  "supportTypeDelivery": "Доставка",
+  "@supportTypeDelivery": {},
+  "supportTypeOther": "Другое",
+  "@supportTypeOther": {},
+  "supportTypeUnknown": "Другое",
+  "@supportTypeUnknown": {},
+  "supportOrderLabel": "Заказ",
+  "@supportOrderLabel": {},
+  "supportOrderNone": "Без заказа",
+  "@supportOrderNone": {},
+  "supportOrderUnknown": "Заказ недоступен",
+  "@supportOrderUnknown": {},
+  "supportOrderAttached": "Заказ {number}",
+  "@supportOrderAttached": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "supportSend": "Отправить",
+  "@supportSend": {},
+  "supportReplyHint": "Сообщение в поддержку",
+  "@supportReplyHint": {},
+  "supportReplyHintAgent": "Ответ клиенту",
+  "@supportReplyHintAgent": {},
+  "supportAuthorYou": "Вы",
+  "@supportAuthorYou": {},
+  "supportAuthorCustomer": "Клиент",
+  "@supportAuthorCustomer": {},
+  "supportAuthorSupport": "Поддержка",
+  "@supportAuthorSupport": {},
+  "supportQueued": "Нет сети. Сообщение сохранено и уйдёт автоматически.",
+  "@supportQueued": {},
+  "supportMessageQueued": "В очереди",
+  "@supportMessageQueued": {},
+  "supportTicketClosed": "Обращение закрыто. Новые сообщения недоступны.",
+  "@supportTicketClosed": {},
+  "supportForeignTicket": "Это обращение другого клиента",
+  "@supportForeignTicket": {},
+  "supportForeignTicketBody": "Показать его могут только автор и поддержка.",
+  "@supportForeignTicketBody": {},
+  "supportStatusOpen": "Открыто",
+  "@supportStatusOpen": {},
+  "supportStatusPending": "Ответ поддержки",
+  "@supportStatusPending": {},
+  "supportStatusResolved": "Решено",
+  "@supportStatusResolved": {},
+  "supportStatusClosed": "Закрыто",
+  "@supportStatusClosed": {},
+  "supportStatusUnknown": "Статус обновляется",
+  "@supportStatusUnknown": {},
+  "supportUpdatedAt": "Обновлено {date}",
+  "@supportUpdatedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "supportMessagesCount": "Сообщений: {count}",
+  "@supportMessagesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "supportSending": "Отправляем…",
+  "@supportSending": {},
+  "supportSendFailed": "Не удалось отправить сообщение",
+  "@supportSendFailed": {},
+  "profileTitle": "Профиль",
+  "@profileTitle": {},
+  "profileGuestTitle": "Вы не вошли",
+  "@profileGuestTitle": {},
+  "profileLanguageTitle": "Язык",
+  "@profileLanguageTitle": {
+    "description": "Заголовок блока выбора языка интерфейса"
+  },
+  "profileLanguageSystem": "Системный",
+  "@profileLanguageSystem": {
+    "description": "Язык интерфейса следует за настройкой телефона"
+  },
+  "profileLanguageRu": "Русский",
+  "@profileLanguageRu": {},
+  "profileLanguageBe": "Беларуская",
+  "@profileLanguageBe": {
+    "description": "Название языка всегда на самом языке (endonym), не переводится"
+  },
+  "profileLanguageHint": "Интерфейс переключается сразу, без перезапуска приложения.",
+  "@profileLanguageHint": {},
+  "profileDataTitle": "Данные",
+  "@profileDataTitle": {},
+  "profileCustomerSinceLabel": "С нами с",
+  "@profileCustomerSinceLabel": {},
+  "profilePhoneLabel": "Телефон",
+  "@profilePhoneLabel": {},
+  "profilePhoneHint": "Сервер отдаёт только маску номера.",
+  "@profilePhoneHint": {},
+  "profileSupportOnlyHint": "В режиме поддержки доступны только обращения клиентов.",
+  "@profileSupportOnlyHint": {},
+  "profileQueueTitle": "Очередь отправки",
+  "@profileQueueTitle": {},
+  "profileQueueEmpty": "Все действия отправлены.",
+  "@profileQueueEmpty": {},
+  "profileQueueEmptyHint": "Здесь появятся заказы и сообщения, которые не удалось отправить без сети.",
+  "@profileQueueEmptyHint": {},
+  "profileQueueItemCheckout": "Оформление заказа",
+  "@profileQueueItemCheckout": {},
+  "profileQueueItemTicket": "Обращение в поддержку",
+  "@profileQueueItemTicket": {},
+  "profileQueueItemMessage": "Сообщение в поддержку",
+  "@profileQueueItemMessage": {},
+  "profileQueueItemUnknown": "Действие",
+  "@profileQueueItemUnknown": {},
+  "profileQueueAttempts": "{count, plural, one{{count} попытка} few{{count} попытки} many{{count} попыток} other{{count} попытки}}",
+  "@profileQueueAttempts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileQueueQueued": "В очереди",
+  "@profileQueueQueued": {},
+  "profileQueueFailed": "Не отправлено",
+  "@profileQueueFailed": {},
+  "profileQueueRetry": "Повторить",
+  "@profileQueueRetry": {},
+  "profileQueueRetryAll": "Повторить все",
+  "@profileQueueRetryAll": {},
+  "profileQueueSent": "Отправлено: {count}",
+  "@profileQueueSent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileQueueStillQueued": "Осталось в очереди: {count}",
+  "@profileQueueStillQueued": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileQueueOrderSent": "Заказ {number} отправлен",
+  "@profileQueueOrderSent": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "profileTestData": "Тестовые данные",
+  "@profileTestData": {},
+  "profileTestDataHint": "Черновики, копии фото и кеш заказов на этом устройстве.",
+  "@profileTestDataHint": {},
+  "profileDeleteTestData": "Удалить черновики и кеш",
+  "@profileDeleteTestData": {},
+  "profileDeleteTestDataTitle": "Удалить тестовые данные?",
+  "@profileDeleteTestDataTitle": {},
+  "profileDeleteTestDataBody": "Черновики, скачанные копии фото и кеш заказов на этом устройстве будут удалены. Аккаунт и заказы на сервере останутся.",
+  "@profileDeleteTestDataBody": {},
+  "profileDeleteTestDataDone": "{count, plural, one{Удалён {count} черновик} few{Удалено {count} черновика} many{Удалено {count} черновиков} other{Удалено {count} черновика}}. Кеш очищен.",
+  "@profileDeleteTestDataDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileDangerTitle": "Удаление данных",
+  "@profileDangerTitle": {},
+  "profileDeleteAccount": "Удалить аккаунт",
+  "@profileDeleteAccount": {},
+  "profileDeleteAccountStep1Title": "Удалить аккаунт и все данные?",
+  "@profileDeleteAccountStep1Title": {},
+  "profileDeleteAccountStep1Body": "Вместе с аккаунтом удалятся заказы, обращения в поддержку, черновики и загруженные фото. Восстановить данные нельзя.",
+  "@profileDeleteAccountStep1Body": {},
+  "profileDeleteAccountStep2Title": "Последнее подтверждение",
+  "@profileDeleteAccountStep2Title": {},
+  "profileDeleteAccountStep2Body": "Аккаунт {email} и все связанные данные будут удалены безвозвратно. Продолжить?",
+  "@profileDeleteAccountStep2Body": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "profileDeleteAccountConfirm": "Удалить безвозвратно",
+  "@profileDeleteAccountConfirm": {},
+  "profileDeleteAccountDone": "Аккаунт и данные удалены",
+  "@profileDeleteAccountDone": {},
+  "profileDeleteAccountFailed": "Не удалось удалить аккаунт. Попробуйте ещё раз.",
+  "@profileDeleteAccountFailed": {},
+  "profileDeletedEmail": "ваш аккаунт",
+  "@profileDeletedEmail": {},
+  "cartSheetsUnit": "{count, plural, one{{count} лист} few{{count} листа} many{{count} листов} other{{count} листа}}",
+  "@cartSheetsUnit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cartBooksUnit": "{count, plural, one{{count} книга} few{{count} книги} many{{count} книг} other{{count} книги}}",
+  "@cartBooksUnit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cartSpreadsUnit": "{count, plural, one{{count} разворот} few{{count} разворота} many{{count} разворотов} other{{count} разворота}}",
+  "@cartSpreadsUnit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cartQuantityDerived": "По макету",
+  "@cartQuantityDerived": {},
+  "cartRecalculated": "Корзина пересчитана по текущему макету",
+  "@cartRecalculated": {},
+  "checkoutGuestWorkTitle": "Проект собран как гость",
+  "@checkoutGuestWorkTitle": {},
+  "checkoutGuestWorkBody": "Проект собран как гость. После входа его нужно будет собрать заново.",
+  "@checkoutGuestWorkBody": {},
+  "checkoutGuestWorkConfirm": "Понятно, войти",
+  "@checkoutGuestWorkConfirm": {},
+  "checkoutPreflightBlocked": "Заказ нельзя оформить, пока не исправлены замечания проверки макета.",
+  "@checkoutPreflightBlocked": {},
+  "checkoutPreflightBlockedTitle": "Заказ заблокирован проверкой",
+  "@checkoutPreflightBlockedTitle": {},
+  "checkoutPreflightBlockedBody": "Пока есть блокирующие замечания, заказ не оформляется. Исправьте их или подтвердите, что заказываете как есть.",
+  "@checkoutPreflightBlockedBody": {},
+  "productOptionsTitle": "Опции",
+  "@productOptionsTitle": {},
+  "productOptionsTotal": "Цена с опциями",
+  "@productOptionsTotal": {},
+  "productOptionsMore": "дороже на {amount}",
+  "@productOptionsMore": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "productOptionsLess": "дешевле на {amount}",
+  "@productOptionsLess": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "productOptionCheaper": "−{amount}",
+  "@productOptionCheaper": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "productOptionDearer": "+{amount}",
+  "@productOptionDearer": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "projectsTitle": "Мои проекты",
+  "@projectsTitle": {},
+  "projectsEmptyTitle": "Проектов пока нет",
+  "@projectsEmptyTitle": {},
+  "projectsEmptyBody": "Соберите проект в каталоге — он сохранится на устройстве.",
+  "@projectsEmptyBody": {},
+  "projectsPhotos": "{count, plural, one{{count} фото} few{{count} фото} many{{count} фото} other{{count} фото}}",
+  "@projectsPhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "projectsUpdatedAt": "Изменён {date}",
+  "@projectsUpdatedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "projectsDelete": "Удалить проект",
+  "@projectsDelete": {},
+  "projectsDeleteTitle": "Удалить проект?",
+  "@projectsDeleteTitle": {},
+  "projectsDeleteBody": "Проект и его копии фото удалятся с устройства. Оригиналы останутся в галерее.",
+  "@projectsDeleteBody": {},
+  "projectsGuestTitle": "Проект принадлежит гостевой сессии",
+  "@projectsGuestTitle": {},
+  "projectsGuestBody": "Проект собран без входа в аккаунт, и перенести его в аккаунт пока нельзя. Соберите проект заново из каталога.",
+  "@projectsGuestBody": {},
+  "projectsGuestBodySnapshot": "Проект собран без входа в аккаунт, и перенести его в аккаунт пока нельзя. Фотографии сохранены на устройстве — можно собрать проект заново с тем же выбором.",
+  "@projectsGuestBodySnapshot": {},
+  "projectsRestart": "Собрать заново",
+  "@projectsRestart": {},
+  "projectsRestarting": "Собираем…",
+  "@projectsRestarting": {},
+  "projectsRestartFailed": "Не удалось собрать проект заново",
+  "@projectsRestartFailed": {},
+  "orderDemoPush": "Demo push",
+  "@orderDemoPush": { "description": "Кнопка имитации push о статусе заказа" },
+  "orderDemoPushBody": "Push: заказ {number} — {status}",
+  "@orderDemoPushBody": {
+    "description": "Текст имитированного push",
+    "placeholders": { "number": { "type": "String" }, "status": { "type": "String" } }
+  },
+  "orderDemoTitle": "Управление статусом",
+  "@orderDemoTitle": {},
+  "orderDemoHint": "Доступно только поддержке. Меняет статус заказа на сервере.",
+  "@orderDemoHint": {},
+  "orderDemoAdvance": "Следующий статус",
+  "@orderDemoAdvance": {},
+  "orderDemoCancel": "Отменить заказ",
+  "@orderDemoCancel": {},
+  "orderDemoNeedsSupport": "Этот переход делает поддержка.",
+  "@orderDemoNeedsSupport": {},
+  "orderDemoPay": "Оплатить",
+  "@orderDemoPay": {},
+  "orderDemoPaid": "Оплата подтверждена сервером",
+  "@orderDemoPaid": {},
+  "orderDemoFailed": "Не удалось выполнить действие",
+  "@orderDemoFailed": {},
+  "orderDemoTooltip": "Контролы mock-сервера (только debug)",
+  "@orderDemoTooltip": {},
+  "paymentPanelTitle": "Оплата заказа",
+  "@paymentPanelTitle": {},
+  "paymentAmountDue": "К оплате {amount}",
+  "@paymentAmountDue": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentRegionLabel": "Страна оплаты",
+  "@paymentRegionLabel": {},
+  "paymentRegionBy": "Беларусь",
+  "@paymentRegionBy": {},
+  "paymentRegionRu": "Россия",
+  "@paymentRegionRu": {},
+  "paymentMethodCard": "Картой онлайн",
+  "@paymentMethodCard": {},
+  "paymentMethodSbp": "СБП",
+  "@paymentMethodSbp": {},
+  "paymentMethodCod": "При получении",
+  "@paymentMethodCod": {},
+  "paymentMethodWallet": "Кошелёк",
+  "@paymentMethodWallet": {},
+  "paymentMethodUnknown": "Способ оплаты",
+  "@paymentMethodUnknown": {},
+  "paymentPay": "Оплатить",
+  "@paymentPay": {},
+  "paymentPreparing": "Готовим платёж…",
+  "@paymentPreparing": {},
+  "paymentAwaitingUser": "Оплатите на странице банка и вернитесь в приложение",
+  "@paymentAwaitingUser": {},
+  "paymentHostedPageFailed": "Не удалось открыть страницу оплаты. Попробуйте ещё раз.",
+  "@paymentHostedPageFailed": {},
+  "paymentHostedPageAgain": "Открыть страницу оплаты",
+  "@paymentHostedPageAgain": {},
+  "paymentChecking": "Проверяем оплату…",
+  "@paymentChecking": {},
+  "paymentUncertain": "Уточняем статус оплаты…",
+  "@paymentUncertain": {},
+  "paymentPaid": "Заказ оплачен",
+  "@paymentPaid": {},
+  "paymentFailed": "Оплата не прошла",
+  "@paymentFailed": {},
+  "paymentRetry": "Попробовать снова",
+  "@paymentRetry": {},
+  "paymentExpired": "Срок оплаты истёк",
+  "@paymentExpired": {},
+  "paymentCreateNew": "Создать новую",
+  "@paymentCreateNew": {},
+  "paymentCanceled": "Оплата отменена",
+  "@paymentCanceled": {},
+  "paymentOnDelivery": "Оплата при получении",
+  "@paymentOnDelivery": {},
+  "paymentOnDeliveryHint": "Способ выбран. Деньги — при получении заказа.",
+  "@paymentOnDeliveryHint": {},
+  "paymentReceipt": "Чек",
+  "@paymentReceipt": {},
+  "paymentReceiptTitle": "Чек",
+  "@paymentReceiptTitle": {},
+  "paymentReceiptFiscal": "Фискальный номер",
+  "@paymentReceiptFiscal": {},
+  "paymentReceiptAmount": "Сумма",
+  "@paymentReceiptAmount": {},
+  "paymentReceiptDate": "Дата",
+  "@paymentReceiptDate": {},
+  "paymentReceiptShare": "Поделиться",
+  "@paymentReceiptShare": {},
+  "paymentReceiptSubject": "Чек PicPac",
+  "@paymentReceiptSubject": {},
+  "paymentReceiptUnavailable": "Чек ещё не готов",
+  "@paymentReceiptUnavailable": {},
+  "paymentReceiptVat": "В том числе НДС",
+  "@paymentReceiptVat": {},
+  "paymentShareFailed": "Не удалось поделиться чеком",
+  "@paymentShareFailed": {},
+  "paymentEripCode": "Код ЕРИП",
+  "@paymentEripCode": {},
+  "paymentSbpHint": "Откройте страницу оплаты и подтвердите перевод в банке",
+  "@paymentSbpHint": {},
+  "paymentNoMethods": "Нет доступных способов оплаты",
+  "@paymentNoMethods": {},
+  "paymentMethodsFailed": "Не удалось загрузить способы оплаты",
+  "@paymentMethodsFailed": {},
+  "paymentCheckFailed": "Не удалось проверить оплату",
+  "@paymentCheckFailed": {},
+  "paymentCheckAgain": "Проверить ещё раз",
+  "@paymentCheckAgain": {},
+  "paymentAlreadyPaid": "Заказ уже оплачен — новый платёж не нужен",
+  "@paymentAlreadyPaid": {},
+  "paymentNotRequired": "Заказ не требует оплаты",
+  "@paymentNotRequired": {},
+  "paymentNotPayable": "Этот заказ нельзя оплатить",
+  "@paymentNotPayable": {},
+  "paymentStatusUnknown": "Уточняем статус",
+  "@paymentStatusUnknown": {},
+  "assistantButton": "Подсказать",
+  "@assistantButton": {"description": "Кнопка ассистента в панели редактора"},
+  "assistantTitle": "Что улучшить?",
+  "@assistantTitle": {"description": "Заголовок шита ассистента"},
+  "assistantHint": "Например: «сделай теплее»",
+  "@assistantHint": {"description": "Подсказка в поле свободного запроса"},
+  "assistantAsk": "Спросить",
+  "@assistantAsk": {"description": "Отправить свободный запрос модели"},
+  "assistantThinking": "Смотрим на листы…",
+  "@assistantThinking": {"description": "Состояние ожидания ответа"},
+  "assistantBefore": "Было",
+  "@assistantBefore": {"description": "Подпись мини-рендера до применения"},
+  "assistantAfter": "Станет",
+  "@assistantAfter": {"description": "Подпись мини-рендера после применения"},
+  "assistantApply": "Применить",
+  "@assistantApply": {"description": "Применить предложение одним шагом"},
+  "assistantRetry": "Попробовать ещё",
+  "@assistantRetry": {"description": "Повторить запрос после отказа"},
+  "assistantOffline": "Для свободного запроса нужен интернет",
+  "@assistantOffline": {"description": "Сеть недоступна, чипы работают локально"},
+  "assistantQuickMode": "Быстрый режим: правила на устройстве",
+  "@assistantQuickMode": {"description": "Предложение построено локальным движком"},
+  "assistantRemoteMode": "Предложение модели",
+  "@assistantRemoteMode": {"description": "Предложение получено от модели за BFF"},
+  "assistantRejected": "Модель предложила несовместимое изменение",
+  "@assistantRejected": {"description": "Патч отклонён валидацией целиком"},
+  "assistantNoChange": "Менять нечего — всё уже так",
+  "@assistantNoChange": {"description": "Модель не нашла изменений"},
+  "assistantApplied": "Готово. Отменить можно кнопкой «Отменить»",
+  "@assistantApplied": {"description": "Изменения применены одним шагом undo"},
+  "assistantChangesTitle": "Что изменится",
+  "@assistantChangesTitle": {"description": "Заголовок списка изменений"},
+  "assistantWarningsTitle": "Стоит знать",
+  "@assistantWarningsTitle": {"description": "Заголовок предупреждений dry-run preflight"},
+  "assistantPreviewLabel": "Предпросмотр листа: {side}",
+  "@assistantPreviewLabel": {"description": "Семантическая подпись мини-рендера"},
+  "assistantPhotoCount": "{count, plural, one{{count} фото} few{{count} фото} many{{count} фото} other{{count} фото}}",
+  "@assistantPhotoCount": {"description": "Количество фото"},
+  "assistantSheetCount": "{count, plural, one{{count} лист} few{{count} листа} many{{count} листов} other{{count} листа}}",
+  "@assistantSheetCount": {"description": "Количество листов"},
+  "assistantSlotCount": "{count, plural, one{{count} кадр} few{{count} кадра} many{{count} кадров} other{{count} кадра}}",
+  "@assistantSlotCount": {"description": "Количество кадров"},
+  "assistantChipWarmer": "Сделай теплее",
+  "@assistantChipWarmer": {"description": "Быстрый интент: теплее"},
+  "assistantChipBrighter": "Ярче",
+  "@assistantChipBrighter": {"description": "Быстрый интент: ярче"},
+  "assistantChipMono": "Ч/б",
+  "@assistantChipMono": {"description": "Быстрый интент: чёрно-белое"},
+  "assistantChipFill": "Заполни пустые места",
+  "@assistantChipFill": {"description": "Быстрый интент: заполнить пустые кадры"},
+  "assistantChipDenser": "Плотнее",
+  "@assistantChipDenser": {"description": "Быстрый интент: плотнее по листам"},
+  "assistantChipAlign": "Выровняй кадры",
+  "@assistantChipAlign": {"description": "Быстрый интент: кадры по центру"},
+  "assistantChangeTone": "Свет и цвет: {details}",
+  "@assistantChangeTone": {"description": "Строка изменений: тон"},
+  "assistantChangeLook": "Стиль: {details}",
+  "@assistantChangeLook": {"description": "Строка изменений: пресет"},
+  "assistantChangeFraming": "Кадрирование: {details}",
+  "@assistantChangeFraming": {"description": "Строка изменений: кадр"},
+  "assistantChangeAssign": "Фото в кадрах: {details}",
+  "@assistantChangeAssign": {"description": "Строка изменений: назначение фото"},
+  "assistantChangeReplace": "Замена фото: {details}",
+  "@assistantChangeReplace": {"description": "Строка изменений: замена фото"},
+  "assistantChangeClearSlot": "Фото убирается: {details}",
+  "@assistantChangeClearSlot": {"description": "Строка изменений: кадр становится пустым"},
+  "assistantChangeBackground": "Цвет листа: {details}",
+  "@assistantChangeBackground": {"description": "Строка изменений: фон"},
+  "assistantChangeLayout": "Шаблон листа: {details}",
+  "@assistantChangeLayout": {"description": "Строка изменений: раскладка листа"},
+  "assistantChangeSwap": "Обмен фото: {details}",
+  "@assistantChangeSwap": {"description": "Строка изменений: обмен кадров"},
+  "assistantChangeMore": "и ещё {count}",
+  "@assistantChangeMore": {"description": "Сколько строк списка изменений скрыто"},
+  "assistantAdjustOther": "Другое",
+  "@assistantAdjustOther": {"description": "Неизвестный параметр регулировки"},
+  "editorAdjustContrast": "Контраст",
+  "@editorAdjustContrast": {"description": "Ползунок контраста"},
+  "editorAdjustTint": "Оттенок",
+  "@editorAdjustTint": {"description": "Ползунок оттенка"},
+  "editorAdjustSaturation": "Насыщенность",
+  "@editorAdjustSaturation": {"description": "Ползунок насыщенности"},
+  "editorAdjustVibrance": "Сочность",
+  "@editorAdjustVibrance": {"description": "Ползунок сочности"},
+  "assistantResultReady": "{intent}: изменений — {count}",
+  "@assistantResultReady": {"description": "Объявление результата для скринридера"},
+  "assistantDisabled": "Свободные запросы сейчас недоступны",
+  "@assistantDisabled": {"description": "AI выключен в сборке или на сервере"},
+  "navIdeas": "Идеи",
+  "@navIdeas": {"description": "Пятый таб: лента готовых шаблонов"},
+  "inspirationTitle": "Идеи",
+  "@inspirationTitle": {"description": "Заголовок ленты идей"},
+  "inspirationTagAll": "Все",
+  "@inspirationTagAll": {"description": "Сброс фильтра тегов"},
+  "inspirationShowAll": "Показать все идеи",
+  "@inspirationShowAll": {"description": "Выйти из пустого фильтра к полной ленте"},
+  "inspirationFilterFavorites": "Избранное",
+  "@inspirationFilterFavorites": {"description": "Показать только сохранённые идеи"},
+  "inspirationTagBarLabel": "Фильтр по тегам",
+  "@inspirationTagBarLabel": {"description": "Семантическая подпись строки чипов"},
+  "inspirationCardLabel": "Шаблон: {title}, {count, plural, one{{count} фото} few{{count} фото} many{{count} фото} other{{count} фото}}",
+  "@inspirationCardLabel": {
+    "description": "Карточка идей — один элемент для скринридера",
+    "placeholders": {
+      "title": {"type": "String", "example": "Семья"},
+      "count": {"type": "int", "example": "4"}
+    }
+  },
+  "inspirationPreviewLabel": "Макет шаблона «{title}», {count, plural, one{{count} фото} few{{count} фото} many{{count} фото} other{{count} фото}}",
+  "@inspirationPreviewLabel": {
+    "description": "Описание локально нарисованного превью",
+    "placeholders": {
+      "title": {"type": "String", "example": "Семья"},
+      "count": {"type": "int", "example": "4"}
+    }
+  },
+  "inspirationSaveTitle": "Сохранить «{title}» в избранное",
+  "@inspirationSaveTitle": {
+    "description": "Семантика сердечка: ещё не сохранено",
+    "placeholders": {
+      "title": {"type": "String", "example": "Семья"}
+    }
+  },
+  "inspirationRemoveTitle": "Убрать «{title}» из избранного",
+  "@inspirationRemoveTitle": {
+    "description": "Семантика сердечка: уже сохранено",
+    "placeholders": {
+      "title": {"type": "String", "example": "Семья"}
+    }
+  },
+  "inspirationSaveToFavorites": "В избранное",
+  "@inspirationSaveToFavorites": {"description": "Кнопка сохранения на экране детали"},
+  "inspirationRemoveFromFavorites": "В избранном",
+  "@inspirationRemoveFromFavorites": {"description": "Кнопка на экране детали, идея уже сохранена"},
+  "inspirationFavoriteFailed": "Не удалось обновить избранное. Проверьте связь и попробуйте ещё раз.",
+  "@inspirationFavoriteFailed": {"description": "Избранное не сохранилось, состояние откатили"},
+  "inspirationEmptyFavoritesTitle": "Здесь пока пусто",
+  "@inspirationEmptyFavoritesTitle": {"description": "Пустое избранное"},
+  "inspirationEmptyFavoritesBody": "Сохраняйте идеи — они появятся здесь",
+  "@inspirationEmptyFavoritesBody": {"description": "Как пополняется избранное"},
+  "inspirationEmptyTagTitle": "Ничего не нашлось",
+  "@inspirationEmptyTagTitle": {"description": "Тег без идей"},
+  "inspirationEmptyTagBody": "Попробуйте другой тег или покажите все идеи",
+  "@inspirationEmptyTagBody": {"description": "Что сделать при пустом теге"},
+  "inspirationEmptyTitle": "Идей пока нет",
+  "@inspirationEmptyTitle": {"description": "Сервер не вернул ни одной идеи"},
+  "inspirationEmptyBody": "Шаблоны появятся здесь, как только сервер их отдаст",
+  "@inspirationEmptyBody": {"description": "Пустая лента без фильтра"},
+  "inspirationLoading": "Загружаем идеи",
+  "@inspirationLoading": {"description": "Скелетон ленты"},
+  "inspirationLoadMore": "Показать ещё",
+  "@inspirationLoadMore": {"description": "Следующая страница ленты"},
+  "inspirationLoadMoreFailed": "Не удалось загрузить ещё. Попробуйте ещё раз.",
+  "@inspirationLoadMoreFailed": {"description": "Следующая страница не загрузилась"},
+  "inspirationDetailTitle": "Идея",
+  "@inspirationDetailTitle": {"description": "Заголовок экрана детали"},
+  "inspirationSupportsLabel": "Подходит для: {formats}",
+  "@inspirationSupportsLabel": {
+    "description": "Форматы, которые поддерживают шаблон",
+    "placeholders": {
+      "formats": {"type": "String", "example": "Печать фотографий 10×15"}
+    }
+  },
+  "inspirationNoSupports": "Этот шаблон пока не подходит ни одному формату",
+  "@inspirationNoSupports": {"description": "Сервер не назвал ни одного формата"},
+  "inspirationApply": "Применить",
+  "@inspirationApply": {"description": "Применить шаблон к проекту"},
+  "inspirationApplying": "Применяем…",
+  "@inspirationApplying": {"description": "Применение шаблона в процессе"},
+  "inspirationApplyProblemTitle": "Шаблон не подошёл",
+  "@inspirationApplyProblemTitle": {"description": "Заголовок диалога о несовместимости"},
+  "inspirationApplyNotSupported": "Этот шаблон не подходит для формата открытого проекта. Выберите другой шаблон.",
+  "@inspirationApplyNotSupported": {"description": "Формат проекта не разрешает шаблон"},
+  "inspirationApplyNotEnoughPhotos": "В шаблоне {slots} кадров, а в проекте {photos} фото. Добавьте фото или выберите шаблон по количеству снимков.",
+  "@inspirationApplyNotEnoughPhotos": {
+    "description": "Слотов больше, чем фото в проекте",
+    "placeholders": {
+      "slots": {"type": "int", "example": "4"},
+      "photos": {"type": "int", "example": "2"}
+    }
+  },
+  "inspirationApplyCommandFailed": "Не удалось разложить фото по шаблону. Попробуйте ещё раз.",
+  "@inspirationApplyCommandFailed": {"description": "Команда SetLayout отказала"},
+  "inspirationApplyNoFormat": "Подходящий формат сейчас недоступен. Проверьте связь и попробуйте ещё раз.",
+  "@inspirationApplyNoFormat": {"description": "Каталог не отдал формат из детали"},
+  "inspirationApplyReady": "Шаблон применён",
+  "@inspirationApplyReady": {"description": "Подтверждение после применения"},
+  "inspirationApplyFailed": "Не удалось применить шаблон. Проверьте связь и попробуйте ещё раз.",
+  "@inspirationApplyFailed": {"description": "Сетевая ошибка применения"},
+  "inspirationTagFamily": "Семья",
+  "@inspirationTagFamily": {"description": "Тег «семья»"},
+  "inspirationTagWedding": "Свадьба",
+  "@inspirationTagWedding": {"description": "Тег «свадьба»"},
+  "inspirationTagGraduation": "Выпускной",
+  "@inspirationTagGraduation": {"description": "Тег «выпускной»"},
+  "inspirationTagTravel": "Путешествие",
+  "@inspirationTagTravel": {"description": "Тег «путешествие»"},
+  "inspirationTagMinimal": "Минимализм",
+  "@inspirationTagMinimal": {"description": "Тег «минимализм»"},
+  "inspirationTagKids": "Детское",
+  "@inspirationTagKids": {"description": "Тег «детское»"},
+  "inspirationTemplateDuoSplit": "Две истории",
+  "@inspirationTemplateDuoSplit": {"description": "Название шаблона: два фото"},
+  "inspirationTemplateTrioHero": "Большой кадр и два маленьких",
+  "@inspirationTemplateTrioHero": {"description": "Название шаблона: три фото"},
+  "inspirationTemplateQuadGrid": "Сетка 2×2",
+  "@inspirationTemplateQuadGrid": {"description": "Название шаблона: четыре фото сеткой"},
+  "inspirationTemplatePolaroid": "Полароид",
+  "@inspirationTemplatePolaroid": {"description": "Название шаблона: полароид 10×15"},
+  "inspirationTemplatePanorama": "Панорама",
+  "@inspirationTemplatePanorama": {"description": "Название шаблона: панорамный кадр"},
+  "inspirationTemplateStrip3": "Три кадра в столбик",
+  "@inspirationTemplateStrip3": {"description": "Название шаблона: три полосы"},
+  "inspirationTemplatePolaroidLarge": "Большой полароид",
+  "@inspirationTemplatePolaroidLarge": {"description": "Название шаблона: полароид 15×20"},
+  "inspirationTemplatePanoramaWide": "Широкая панорама",
+  "@inspirationTemplatePanoramaWide": {"description": "Название шаблона: панорама 15×20"},
+  "inspirationTemplateBookSingle": "Одно фото на разворот",
+  "@inspirationTemplateBookSingle": {"description": "Название шаблона: разворот целиком"},
+  "inspirationTemplateBookDuo": "Два фото на разворот",
+  "@inspirationTemplateBookDuo": {"description": "Название шаблона: две страницы"},
+  "inspirationTemplateBookTrio": "Разворот с акцентом",
+  "@inspirationTemplateBookTrio": {"description": "Название шаблона: три фото на развороте"},
+  "inspirationTemplateBookQuad": "Разворот 2×2",
+  "@inspirationTemplateBookQuad": {"description": "Название шаблона: четыре фото на развороте"},
+  "inspirationTemplateBookSix": "Шесть фото на разворот",
+  "@inspirationTemplateBookSix": {"description": "Название шаблона: шесть фото на развороте"},
+  "inspirationTemplateBookPanorama": "Панорама на разворот",
+  "@inspirationTemplateBookPanorama": {"description": "Название шаблона: панорама на развороте"},
+  "inspirationTemplateFallback": "Шаблон",
+  "@inspirationTemplateFallback": {"description": "Неизвестный ключ названия шаблона"}
+}

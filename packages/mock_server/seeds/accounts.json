@@ -1,0 +1,37 @@
+{
+  "seededAt": "2026-11-09",
+  "source": "mock fixtures for stage 0 (task brief); passwords are stored as PBKDF2-HMAC-SHA256 digests, the plain-text values exist only in README/tests",
+  "notes": [
+    "Test accounts are fixed fixtures for QA and demos: customer@picpac.test / Test1234 and support@picpac.test / Test1234.",
+    "Only a salted PBKDF2-HMAC-SHA256 digest of Test1234 is stored here, in the form pbkdf2$<iterations>$<saltB64>$<hashB64>; the mock compares derived keys and never logs a password.",
+    "challenge_demo is a pre-armed one-time-code challenge: POST /v1/auth/verify {challengeId: 'challenge_demo', code: '0000'} returns a customer session. Five wrong codes burn the challenge (410 challenge_expired)."
+  ],
+  "accounts": [
+    {
+      "id": "cus_demo",
+      "email": "customer@picpac.test",
+      "role": "customer",
+      "name": "Тестовый клиент",
+      "phoneMasked": "+375 ** *** 12 34",
+      "isGuest": false,
+      "passwordHash": "pbkdf2$100000$UGljUGFjLWN1cy1kZW1vMQ==$Pab3SBVvLSnDKXrOYzBhzpdaCSS/lxKZz0TmHmRTaC8="
+    },
+    {
+      "id": "sup_demo",
+      "email": "support@picpac.test",
+      "role": "support_agent",
+      "name": "Агент поддержки",
+      "phoneMasked": "+375 ** *** 00 00",
+      "isGuest": false,
+      "passwordHash": "pbkdf2$100000$UGljUGFjLXN1cC1kZW1vMSE=$38eiRC3wMBlpqxXJCDRazo7+qqLsaBuYU8OKXwE3XnA="
+    }
+  ],
+  "challenges": [
+    {
+      "id": "challenge_demo",
+      "accountId": "cus_demo",
+      "code": "0000",
+      "ttlMinutes": 15
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launch theme background: brand cream + the emblem centred.
+     The app has no dark mode, so the night variant of the window is the same
+     cream — a black flash on cold start would break the brand. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/picpac_background" />
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/launch_image" />
+    </item>
+</layer-list>

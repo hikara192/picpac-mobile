@@ -1,0 +1,23 @@
+{
+  "seededAt": "2026-11-09",
+  "source": "mock fixtures for stage 0 (task brief): TEST10 = -10 %, PIC100 = 100 % promo with an immediately paid order",
+  "notes": [
+    "Promo codes are demo fixtures, not live marketing data.",
+    "Percent promos discount the merchandise subtotal only; the 100 % promo discounts the whole order (including delivery) so the total is exactly 0.",
+    "Discount is computed server-side with integer floor: discountMinor = subtotalMinor * percent / 100."
+  ],
+  "promotions": [
+    {
+      "code": "TEST10",
+      "kind": "percent",
+      "percent": 10,
+      "titleKey": "promo.test10"
+    },
+    {
+      "code": "PIC100",
+      "kind": "percent",
+      "percent": 100,
+      "titleKey": "promo.pic100"
+    }
+  ]
+}

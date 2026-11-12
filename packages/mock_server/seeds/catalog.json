@@ -1,0 +1,398 @@
+{
+  "seededAt": "2026-11-09",
+  "source": "ALLINFO/parsed-web-full/data/super/formats.csv + products.csv + options.csv + pricing-rules.csv; ALLINFO/parsed-web-full/data/catalog-2026-11-09.csv; knowledge/product.md §7",
+  "currency": "BYN",
+  "region": "BY",
+  "notes": [
+    "All money is integer minor units (kopecks). No doubles, no formatted strings.",
+    "productionDays is the workshop lead time from formats.csv (2 for prints, 3 for books).",
+    "Book price = baseMinor + ((spreadsCount - minSpreads) / step) * incrementMinor. The fixed_prices lists in formats.csv are exactly linear, so the compact form reproduces every point.",
+    "Photo printing: spreadsCount in PriceRequest is the number of sheets; minSpreads/maxSpreads stay 0 (unconstrained) because a sheet count is a cart quantity.",
+    "digital print type delta for 10x15 = 61 - 130 = -69 (catalog-2026-11-09.csv: chemical 1.30, digital 0.61)."
+  ],
+  "products": [
+    {
+      "id": "photo_print",
+      "title": "Печать фотографий",
+      "category": "prints",
+      "kind": "prints",
+      "productionDays": 2,
+      "formats": [
+        {
+          "id": "10x15",
+          "title": "10×15",
+          "widthMm": 102,
+          "heightMm": 152,
+          "bleedMm": 0,
+          "safeMm": 0,
+          "dpi": 300,
+          "minPhotos": 1,
+          "maxPhotos": 4,
+          "minSpreads": 0,
+          "maxSpreads": 0,
+          "spreadStep": 0,
+          "pricing": { "kind": "perUnit", "unitPriceMinor": 130 },
+          "options": [
+            {
+              "id": "print_type",
+              "title": "Тип печати",
+              "values": [
+                { "id": "chemical", "title": "Фотохимическая", "isDefault": true },
+                { "id": "digital", "title": "Цифровая", "priceDeltaMinor": -69, "note": "[calc: 61 - 130 = -69]" }
+              ]
+            },
+            {
+              "id": "paper",
+              "title": "Тип бумаги",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "single_10x15",
+              "nameKey": "template.single_10x15",
+              "kind": "print",
+              "aspect": 0.6710526315789473,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            },
+            {
+              "id": "duo_10x15",
+              "nameKey": "template.duo_10x15",
+              "kind": "print",
+              "aspect": 0.6710526315789473,
+              "slots": [
+                { "id": "top", "rect": { "x": 0, "y": 0, "w": 1, "h": 0.4975 } },
+                { "id": "bottom", "rect": { "x": 0, "y": 0.5025, "w": 1, "h": 0.4975 } }
+              ]
+            },
+            {
+              "id": "quad_10x15",
+              "nameKey": "template.quad_10x15",
+              "kind": "collage",
+              "aspect": 0.6710526315789473,
+              "slots": [
+                { "id": "tl", "rect": { "x": 0, "y": 0, "w": 0.4975, "h": 0.4975 } },
+                { "id": "tr", "rect": { "x": 0.5025, "y": 0, "w": 0.4975, "h": 0.4975 } },
+                { "id": "bl", "rect": { "x": 0, "y": 0.5025, "w": 0.4975, "h": 0.4975 } },
+                { "id": "br", "rect": { "x": 0.5025, "y": 0.5025, "w": 0.4975, "h": 0.4975 } }
+              ]
+            },
+            {
+              "id": "single_3x4",
+              "nameKey": "template.single_3x4",
+              "kind": "print",
+              "aspect": 0.75,
+              "slots": [
+                { "id": "main", "rect": { "x": 0, "y": 0.0526, "w": 1, "h": 0.8947 } }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15x20",
+          "title": "15×20",
+          "widthMm": 152,
+          "heightMm": 203,
+          "bleedMm": 0,
+          "safeMm": 0,
+          "dpi": 300,
+          "minPhotos": 1,
+          "maxPhotos": 1,
+          "minSpreads": 0,
+          "maxSpreads": 0,
+          "spreadStep": 0,
+          "pricing": { "kind": "perUnit", "unitPriceMinor": 160 },
+          "options": [
+            {
+              "id": "paper",
+              "title": "Тип бумаги",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "single_sheet",
+              "nameKey": "template.single_sheet",
+              "kind": "print",
+              "aspect": 0.7487684729064039,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        },
+        {
+          "id": "20x30",
+          "title": "20×30",
+          "widthMm": 203,
+          "heightMm": 305,
+          "bleedMm": 0,
+          "safeMm": 0,
+          "dpi": 300,
+          "minPhotos": 1,
+          "maxPhotos": 1,
+          "minSpreads": 0,
+          "maxSpreads": 0,
+          "spreadStep": 0,
+          "pricing": { "kind": "perUnit", "unitPriceMinor": 320 },
+          "options": [
+            {
+              "id": "paper",
+              "title": "Тип бумаги",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "single_sheet",
+              "nameKey": "template.single_sheet",
+              "kind": "print",
+              "aspect": 0.6655737704918033,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        },
+        {
+          "id": "30x45",
+          "title": "30×45",
+          "widthMm": 457,
+          "heightMm": 305,
+          "bleedMm": 0,
+          "safeMm": 0,
+          "dpi": 300,
+          "minPhotos": 1,
+          "maxPhotos": 1,
+          "minSpreads": 0,
+          "maxSpreads": 0,
+          "spreadStep": 0,
+          "pricing": { "kind": "perUnit", "unitPriceMinor": 2000 },
+          "options": [
+            {
+              "id": "paper",
+              "title": "Тип бумаги",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "single_sheet",
+              "nameKey": "template.single_sheet",
+              "kind": "print",
+              "aspect": 1.498360655737705,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo_book_classic",
+      "title": "Фотокнига Classic",
+      "category": "books",
+      "kind": "books",
+      "productionDays": 3,
+      "formats": [
+        {
+          "id": "20x20",
+          "title": "20×20",
+          "widthMm": 200,
+          "heightMm": 203,
+          "spreadWidthMm": 400,
+          "spreadHeightMm": 203,
+          "coverWidthMm": 454,
+          "coverHeightMm": 240,
+          "bleedMm": 3,
+          "safeMm": 3,
+          "dpi": 300,
+          "minPhotos": 20,
+          "maxPhotos": 200,
+          "minSpreads": 10,
+          "maxSpreads": 30,
+          "spreadStep": 1,
+          "pricing": { "kind": "perSpread", "baseMinor": 8100, "incrementMinor": 300 },
+          "options": [
+            {
+              "id": "cover_lamination",
+              "title": "Ламинация обложки",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            },
+            {
+              "id": "page_lamination",
+              "title": "Ламинация разворотов",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "spread_full",
+              "nameKey": "template.spread_full",
+              "kind": "spread",
+              "aspect": 1.9704433497536946,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        },
+        {
+          "id": "21x30",
+          "title": "21×30",
+          "widthMm": 208,
+          "heightMm": 296,
+          "spreadWidthMm": 416,
+          "spreadHeightMm": 296,
+          "coverWidthMm": 464,
+          "coverHeightMm": 330,
+          "bleedMm": 3,
+          "safeMm": 3,
+          "dpi": 300,
+          "minPhotos": 0,
+          "maxPhotos": 0,
+          "minSpreads": 10,
+          "maxSpreads": 30,
+          "spreadStep": 1,
+          "pricing": { "kind": "perSpread", "baseMinor": 11100, "incrementMinor": 350 },
+          "options": [
+            {
+              "id": "cover_lamination",
+              "title": "Ламинация обложки",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            },
+            {
+              "id": "page_lamination",
+              "title": "Ламинация разворотов",
+              "values": [
+                { "id": "gloss", "title": "Глянцевая", "isDefault": true },
+                { "id": "matte", "title": "Матовая" }
+              ]
+            }
+          ],
+          "templates": [
+            {
+              "id": "spread_full",
+              "nameKey": "template.spread_full",
+              "kind": "spread",
+              "aspect": 1.4054054054054055,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo_book_premium",
+      "title": "Фотокнига Premium",
+      "category": "books",
+      "kind": "books",
+      "productionDays": 3,
+      "formats": [
+        {
+          "id": "20x20",
+          "title": "20×20",
+          "widthMm": 200,
+          "heightMm": 203,
+          "spreadWidthMm": 400,
+          "spreadHeightMm": 203,
+          "coverWidthMm": 454,
+          "coverHeightMm": 240,
+          "bleedMm": 3,
+          "safeMm": 3,
+          "dpi": 300,
+          "minPhotos": 15,
+          "maxPhotos": 200,
+          "minSpreads": 5,
+          "maxSpreads": 30,
+          "spreadStep": 1,
+          "pricing": { "kind": "perSpread", "baseMinor": 10050, "incrementMinor": 700 },
+          "options": [
+            {
+              "id": "cover_lamination",
+              "title": "Ламинация обложки",
+              "values": [{ "id": "gloss", "title": "Глянцевая", "isDefault": true }]
+            },
+            {
+              "id": "paper_type",
+              "title": "Тип фотобумаги",
+              "values": [{ "id": "matte", "title": "Матовая", "isDefault": true }]
+            }
+          ],
+          "templates": [
+            {
+              "id": "spread_full",
+              "nameKey": "template.spread_full",
+              "kind": "spread",
+              "aspect": 1.9704433497536946,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo_book_lite",
+      "title": "Фотокнига Lite",
+      "category": "books",
+      "kind": "books",
+      "productionDays": 3,
+      "formats": [
+        {
+          "id": "20x20",
+          "title": "20×20",
+          "widthMm": 200,
+          "heightMm": 200,
+          "spreadWidthMm": 203,
+          "spreadHeightMm": 203,
+          "coverWidthMm": 454,
+          "coverHeightMm": 240,
+          "bleedMm": 10,
+          "safeMm": 3,
+          "dpi": 300,
+          "minPhotos": 25,
+          "maxPhotos": 400,
+          "minSpreads": 24,
+          "maxSpreads": 160,
+          "spreadStep": 2,
+          "pricing": { "kind": "perSpread", "baseMinor": 7000, "incrementMinor": 200 },
+          "options": [
+            {
+              "id": "cover_lamination",
+              "title": "Ламинация обложки",
+              "values": [{ "id": "gloss", "title": "Глянцевая", "isDefault": true }]
+            },
+            {
+              "id": "paper",
+              "title": "Тип бумаги",
+              "values": [{ "id": "coated", "title": "Мелованная без ламинации", "isDefault": true }]
+            }
+          ],
+          "templates": [
+            {
+              "id": "spread_full",
+              "nameKey": "template.spread_full",
+              "kind": "spread",
+              "aspect": 1.0,
+              "slots": [{ "id": "main", "rect": { "x": 0, "y": 0, "w": 1, "h": 1 } }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

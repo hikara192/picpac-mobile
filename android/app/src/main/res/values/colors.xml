@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand background #FAF5ED (knowledge/brand.md §3). -->
+    <color name="picpac_background">#FAF5ED</color>
+    <!-- Adaptive launcher icon plate. -->
+    <color name="ic_launcher_background">#FAF5ED</color>
+</resources>
